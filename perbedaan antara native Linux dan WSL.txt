@@ -1,0 +1,14 @@
+Kalau dibandingin Windows sama WSL, sebenernya mereka beda fungsi. Windows itu sistem utama 
+yang langsung jalan di laptop dan ngatur semua hardware.Nah, WSL itu cuma kayak “Linux di dalam Windows”, 
+jadi dia nggak berdiri sendiri.
+
+Di WSL2, walaupun udah pakai kernel Linux asli, dia tetap jalan lewat virtual machine ringan.
+Jadi nggak langsung ke hardware kayak Linux biasa, tapi lewat perantara dulu dari Windows. 
+Makanya dibilang masih ada lapisan di tengah.
+
+Kalau soal penggunaan, Windows lebih cocok buat hal umum kayak buka aplikasi, main game, atau kerja
+sehari-hari. Sedangkan WSL lebih enak buat ngoding, apalagi kalau butuh tools Linux. Enaknya, kita nggak
+perlu install Linux beneran atau dual boot, cukup pakai WSL aja udah bisa dua-duanya.
+
+Jadi gampangnya, Windows itu “bosnya” yang ngatur semuanya, sedangkan WSL itu cuma numpang buat jalanin
+ Linux biar kita bisa kerja lebih fleksibel.

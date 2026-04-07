@@ -1,0 +1,18 @@
+Berdasarkan perbandingan antara Windows dan Windows Subsystem for Linux (WSL), keduanya memiliki peran dan cara kerja yang berbeda. Windows merupakan sistem operasi utama yang berjalan langsung di atas perangkat keras (hardware) dan menggunakan kernel Windows NT untuk mengatur seluruh 
+sumber daya komputer. Sementara itu, WSL merupakan sebuah lingkungan tambahan yang memungkinkan
+pengguna menjalankan sistem Linux di dalam Windows tanpa perlu melakukan instalasi secara terpisah.
+
+Pada WSL2, sistem sudah menggunakan kernel Linux asli, namun tidak berjalan langsung di atas hardware
+seperti Linux native. WSL2 memanfaatkan virtual machine ringan sebagai perantara antara 
+sistem Linux dan Windows. Hal ini menyebabkan WSL2 tetap memiliki performa yang 
+baik dan kompatibilitas tinggi terhadap aplikasi Linux, meskipun masih berada di atas 
+sistem operasi Windows.
+
+Dari segi penggunaan, Windows lebih ditujukan untuk kebutuhan umum seperti menjalankan aplikasi 
+perkantoran, desain, maupun hiburan. Sebaliknya, WSL lebih difokuskan untuk kebutuhan 
+pengembangan (development), terutama yang memerlukan lingkungan Linux seperti pemrograman dan 
+penggunaan tools berbasis terminal.
+
+Dengan demikian, dapat disimpulkan bahwa Windows berfungsi sebagai sistem operasi utama yang mengelola
+perangkat keras, sedangkan WSL berperan sebagai lingkungan Linux tambahan yang berjalan di atas 
+Windows untuk mendukung kebutuhan pengguna, khususnya dalam bidang pengembangan perangkat lunak.
