@@ -1,0 +1,20 @@
+Berdasarkan pengujian yang dilakukan, sistem operasi mengalokasikan memori ke program Python 
+secara dinamis sesuai kebutuhan proses yang berjalan. Ketika program dijalankan, OS akan 
+menyediakan sejumlah memori awal, kemudian akan menambah alokasi memori jika program 
+membutuhkan ruang lebih besar selama eksekusi. Alokasi ini dikelola melalui mekanisme 
+manajemen memori yang efisien, sehingga setiap proses mendapatkan bagian memori tanpa 
+saling mengganggu.
+
+Dalam Python, terdapat konsep heap, yaitu area memori yang digunakan untuk menyimpan objek-objek 
+seperti list, dictionary, dan variabel lainnya yang dibuat saat program berjalan. Heap bersifat 
+dinamis, artinya ukurannya dapat bertambah atau berkurang tergantung kebutuhan program.
+
+Penggunaan memori akan meningkat ketika banyak task dimuat ke dalam list karena setiap elemen 
+dalam list memerlukan ruang di heap. Semakin banyak data yang disimpan, maka semakin besar 
+pula memori yang dibutuhkan. Selain itu, Python juga menyimpan referensi objek dan struktur 
+internal list, sehingga penambahan elemen tidak hanya menambah data, tetapi juga menambah overhead memori.
+
+Dengan demikian, kenaikan penggunaan memori saat banyak task dimasukkan ke dalam list terjadi 
+karena bertambahnya objek yang disimpan di heap, yang secara langsung meningkatkan kebutuhan 
+memori oleh proses Python.
+

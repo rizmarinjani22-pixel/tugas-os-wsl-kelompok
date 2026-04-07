@@ -1,0 +1,17 @@
+Berdasarkan pengujian yang dilakukan dengan menjalankan program stress_test.py sambil memantau penggunaan memori menggunakan perintah free -m setiap 2 detik, terlihat adanya perubahan pada kolom used. 
+Program stress_test.py menambahkan hingga 1000 task, yang menyebabkan peningkatan beban kerja pada
+sistem.
+
+Dari hasil pengamatan, nilai used memory mengalami peningkatan seiring bertambahnya jumlah task yang 
+dijalankan. Hal ini menunjukkan bahwa setiap task yang dibuat membutuhkan alokasi memori tambahan, 
+sehingga penggunaan RAM meningkat secara bertahap. Selain itu, sistem juga mengelola memori dengan 
+memanfaatkan buffer/cache, yang terlihat pada kolom buff/cache, sehingga penggunaan memori tidak 
+selalu naik secara drastis karena adanya mekanisme efisiensi dari sistem operasi.
+
+Setelah proses stress test selesai, penggunaan memori cenderung stabil dan tidak terus meningkat 
+secara signifikan. Hal ini menandakan bahwa sistem operasi (dalam hal ini Linux pada WSL2) mampu 
+mengelola dan mengalokasikan memori dengan baik selama proses berlangsung.
+
+Dengan demikian, dapat disimpulkan bahwa semakin besar beban proses yang dijalankan, maka penggunaan 
+memori (kolom used) akan meningkat, namun tetap dikontrol 
+oleh sistem melalui manajemen memori yang efisien.

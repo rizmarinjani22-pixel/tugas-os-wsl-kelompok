@@ -1,0 +1,16 @@
+Berdasarkan hasil pemantauan menggunakan perintah htop, terlihat bahwa proses python3 stress_test.py mengalami perubahan pada penggunaan memori (kolom MEM%) sebelum dan sesudah beban diberikan. Pada saat awal 
+sebelum beban tinggi, penggunaan memori oleh proses Python masih relatif kecil. 
+Namun, ketika program stress_test.
+py dijalankan dan mulai menambahkan hingga 1000 task, nilai MEM% pada proses Python meningkat.
+
+Peningkatan ini menunjukkan bahwa program tersebut membutuhkan alokasi memori tambahan untuk setiap 
+task yang dijalankan. Selain itu, pada tampilan htop juga terlihat bahwa nilai RES (resident memory) 
+ikut bertambah, yang menandakan peningkatan penggunaan RAM secara langsung oleh proses tersebut.
+
+Meskipun terjadi peningkatan penggunaan memori, sistem tetap dapat berjalan dengan stabil 
+tanpa mengalami crash atau kehabisan memori. Hal ini menunjukkan bahwa manajemen memori 
+pada sistem Linux (WSL2) mampu menangani beban proses dengan baik, serta mendistribusikan 
+sumber daya secara efisien.
+
+Dengan demikian, dapat disimpulkan bahwa semakin besar beban proses yang dijalankan oleh program Python,
+maka penggunaan memori (MEM%) akan meningkat secara bertahap, sesuai dengan jumlah task yang diproses.
